@@ -97,3 +97,6 @@ class PreTalx:
         return requests.get(
             f"{self.domain}/api/events/{event}/tags/{code}", headers=self.headers
         )
+
+    def validate_token(self) -> Response:
+        return requests.get(f"{self.domain}/api/me", headers=self.headers)
