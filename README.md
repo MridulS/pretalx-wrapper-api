@@ -10,7 +10,7 @@ In [2]: url = "https://pretalx.com"
 
 In [3]: api = PreTalx(url)
 
-In [4]: api.get_events('pycon-2022').json()
+In [4]: api.get_event('pycon-2022').json()
 Out[4]:
 {'name': {'en': 'PyCon US 2022', 'es': 'PyCon US 2022'},
  'slug': 'pycon-2022',
